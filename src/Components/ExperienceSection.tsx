@@ -6,7 +6,9 @@ class ExperienceSection extends React.Component {
     render(){
         return (
             <div className='ExperienceSectionContainer'>
+                <div className='ExperienceSubContainer'>
                 {this.props.selected}
+                </div>
             </div>
         )
     }
