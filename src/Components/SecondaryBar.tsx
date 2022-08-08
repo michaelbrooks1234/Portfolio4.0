@@ -10,26 +10,26 @@ class SecondaryBar extends React.Component<any, any>{
 
     constructor(props: any) {
     super(props);
-    this.state = {setSection: props.setSection}
+    this.state = {setSection: props.setSection, sectionSelected: <ChiliSection/>}
     
     this.selectSection = this.selectSection.bind(this);
     }
 
 
 
-    async selectSection(section: string){
+    selectSection(section: string){
             if(section === "CHILI Publish"){
-                    this.state.setSection(<ChiliSection/>);
+                this.state.setSection(<ChiliSection/>);
             }else if (section ==="Sykes"){
-                    this.state.setSection(<SykesSection/>);
+                this.state.setSection(<SykesSection/>);
             }else if (section === "VayK Gear"){
-                    this.state.setSection(<VaykSection/>);
+                this.state.setSection(<VaykSection/>);
             }else if(section === "Papa John's"){
-                    this.state.setSection(<PapaJohnSection/>);
+                this.state.setSection(<PapaJohnSection/>);
             }else {
-                    this.state.setSection(<PersonalExperience/>);
+                this.state.setSection(<PersonalExperience/>);
             }
-        return null;
+        return;
     }
 
     render() {

@@ -3,7 +3,7 @@ import React from 'react';
 class TitleBackground extends React.Component<any, any> {
     constructor(props: any) {
     super(props);
-    this.state = {headshot: props.headShot} 
+    this.state = {headshot: props.headShot, arrow: props.arrow, scrollOnClick: props.scrollOnClick} 
     }
 
     render() {
@@ -26,7 +26,7 @@ class TitleBackground extends React.Component<any, any> {
                     <h1 className="ExperienceTitle">
                         EXPERIENCE
                     </h1>
-                    <img className="Arrow" alt="arrow :)"/>
+                    <img className="Arrow" alt="arrow :)" src={this.props.arrow}/>
                 </div>
             </div>
         )

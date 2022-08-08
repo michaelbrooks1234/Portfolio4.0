@@ -6,20 +6,34 @@ import SecondaryBar from './Components/SecondaryBar'
 import ExperienceSection from './Components/ExperienceSection'
 import ChiliSection from './Components/ChiliSection'
 import Headshot from './HeadshotRatio.png'
+import arrow from './arrow.png'
 
 
-function App() {
+class App extends React.Component<any, any>{
 
-  const [selectedSection, setSelected] = React.useState(<ChiliSection/>);
+  constructor(props: any) {
+    super(props);
+    this.state = {selectedSection: <ChiliSection/>, scrollToSection: "Experience"}
 
-  return (
-    <div className="App">
-      <NavBar/>
-      <TitleBackground headShot={Headshot}/>
-      <SecondaryBar setSection={setSelected}/>
-      <ExperienceSection selected={selectedSection}/>
-    </div>
-  );
+    this.setSelected = this.setSelected.bind(this);
+  }
+
+  setSelected(section: any){
+    this.setState({ 
+      selectedSection: section 
+    })
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <NavBar/>
+        <TitleBackground headShot={Headshot} arrow={arrow}/>
+        <SecondaryBar setSection={this.setSelected}/>
+        <ExperienceSection selected={this.state.selectedSection}/>
+      </div>
+    )
+  }
 }
 
 export default App;
