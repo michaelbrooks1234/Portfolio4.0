@@ -440,7 +440,6 @@ body::-webkit-scrollbar {
 .ExperienceSectionIntroContainer h1{
   font-family: 'Roboto Slab', serif;
   font-size: 15px;
-
 }
 
 
@@ -451,27 +450,61 @@ body::-webkit-scrollbar {
 
 
 .ExperienceSectionContainer {
-  height: auto;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #fdecff;
 }
 
 .ExperienceSubContainer {
   width: var(--content-width);
   text-align: left;
-  margin-top: 5vh;
+  margin-top: 15vh;
 }
 
 .ExperienceSubContainer h1 {
   font-family: 'Roboto Slab', serif;
 }
 
+.JobTitle {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
 
+.JobRoleTitle {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
 
+.ExperienceSubSection {
+  background-color: #ff776c;
+  box-shadow: 5px 3px 0px #ff210f;
+  padding: 15px;
+}
 
+.JobTimePeriod {
+  font-size: 10px;
+}
+
+.JobDescription ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.JobDescription ul li {
+  background-color: #ff8e85;
+  padding-left: 5px;
+  margin-left: 0;
+  margin-top: 5px;
+  max-width: 80%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  box-shadow: 3px 2px 0px #ff210f;
+}
 
 
 
