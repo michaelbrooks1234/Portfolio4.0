@@ -10,7 +10,7 @@ class SecondaryBar extends React.Component<any, any>{
 
     constructor(props: any) {
     super(props);
-    this.state = {setSection: props.setSection, sectionSelected: <ChiliSection/>}
+    this.state = {setSection: props.setSection, passRef: props.passRef}
     
     this.selectSection = this.selectSection.bind(this);
     }
@@ -34,7 +34,7 @@ class SecondaryBar extends React.Component<any, any>{
 
     render() {
         return (
-            <div className="SecondaryBar">
+            <div className="SecondaryBar" ref={this.state.passRef}>
                 <div className="SecondBarContent">
                     <ul>
                         <li onClick={() => this.selectSection('CHILI Publish')}>CHILI Publish</li>
