@@ -13,7 +13,7 @@ class SykesSection extends React.Component {
                 <h1 className="JobTimePeriod">
                    From Dec 13 2021 - Present. 
                 </h1>
-                <div>
+                <div className="JobDescription">
                     <ul>
                         <li>Job Description</li>
                         <li>Job Description</li>

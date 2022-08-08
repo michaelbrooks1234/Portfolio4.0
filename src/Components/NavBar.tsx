@@ -24,7 +24,7 @@ class NavBar extends React.Component<any, any> {
             <div className="NavBarContent">
                 <div className="LeftNav">
                     <h1 className="NavName" onClick={this.openMichael}>
-                        
+                       <span className="Purple">MICHAEL </span><span className="Blue">BROOKS</span>
                     </h1>
                 </div>
                 <div className="RightNav">

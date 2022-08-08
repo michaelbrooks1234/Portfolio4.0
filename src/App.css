@@ -42,6 +42,9 @@ body::-webkit-scrollbar {
   color: #AFB4FF;
 }
 
+.DarkBlue {
+  color: #005c61;
+}
 
 
 
@@ -454,6 +457,7 @@ body::-webkit-scrollbar {
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .ExperienceSubContainer {
@@ -480,8 +484,8 @@ body::-webkit-scrollbar {
 }
 
 .ExperienceSubSection {
-  background-color: #ff776c;
-  box-shadow: 5px 3px 0px #ff210f;
+  background-color: #1bc0c9;
+  box-shadow: 1px 1px 0px black;
   padding: 15px;
 }
 
@@ -496,14 +500,14 @@ body::-webkit-scrollbar {
 }
 
 .JobDescription ul li {
-  background-color: #ff8e85;
+  background-color: #18b0b8;
   padding-left: 5px;
   margin-left: 0;
   margin-top: 5px;
   max-width: 80%;
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
-  box-shadow: 3px 2px 0px #ff210f;
+  box-shadow: 3px 2px 0px #005c61;
 }
 
 
