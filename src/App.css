@@ -457,11 +457,11 @@ body::-webkit-scrollbar {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: #ebfeff;
 }
 
 .ExperienceSubContainer {
-  width: var(--content-width);
+  width: 40%;
   text-align: left;
   margin-top: 15vh;
 }
@@ -475,39 +475,42 @@ body::-webkit-scrollbar {
   font-weight: 700;
   margin: 0;
   padding: 0;
+  margin-left: 15px;
 }
 
 .JobRoleTitle {
   font-size: 20px;
   margin: 0;
+  margin-left: 15px;
   padding: 0;
 }
 
 .ExperienceSubSection {
-  background-color: #1bc0c9;
-  box-shadow: 1px 1px 0px black;
+  background-color: white;
+  border-radius: 3px;
+  border: solid 1px #acdcdf;
   padding: 15px;
 }
 
 .JobTimePeriod {
   font-size: 10px;
+  margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 .JobDescription ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  justify-content: center;
 }
 
 .JobDescription ul li {
-  background-color: #18b0b8;
   padding-left: 5px;
-  margin-left: 0;
-  margin-top: 5px;
+  margin: 10px;
   max-width: 80%;
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
-  box-shadow: 3px 2px 0px #005c61;
 }
 
 
