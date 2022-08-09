@@ -43,7 +43,7 @@ class App extends React.Component<any, any>{
         <NavBar scrollFunction={this.scrollToComp}/>
         <TitleBackground headShot={Headshot} arrow={arrow} scrollFunction={this.scrollToComp}/>
         <SecondaryBar setSection={this.setSelected} passRef={this.secondaryBarScroll}/>
-        <ExperienceSection selected={this.state.selectedSection}/>
+        <ExperienceSection selected={this.state.selectedSection} arrow={arrow}/>
       </div>
     )
   }

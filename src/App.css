@@ -247,7 +247,7 @@ body::-webkit-scrollbar {
   height: 300px;
   width: 300px;
   position: absolute;
-  bottom: 30%;
+  bottom: 40%;
   right: 28%;
   z-index: 20;
 }
@@ -445,6 +445,23 @@ body::-webkit-scrollbar {
   font-size: 15px;
 }
 
+.ExperienceBobble {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  }
+
+.ArrowReversed {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  transform: rotate(180deg);
+}
 
 
 
@@ -456,6 +473,7 @@ body::-webkit-scrollbar {
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   background-color: #ebfeff;
 }
@@ -512,9 +530,3 @@ body::-webkit-scrollbar {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
 }
-
-
-
-
-
-

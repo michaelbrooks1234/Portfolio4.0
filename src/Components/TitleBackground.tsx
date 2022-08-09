@@ -14,6 +14,10 @@ class TitleBackground extends React.Component<any, any> {
                     <h1 className="Title"><span className="Michael">Michael</span> Brooks</h1>
                     <h1 className="Title2">A software engineer specializing in full stack development. <span className="Purple">The backend</span>, <span className="Blue">the frontend</span>, and <span className="LightBlue">the inbetween</span>. I love learning new technologies to create things with and hope you enjoy learning about me!</h1>
                 </div>
+                <div className="DecorationContainer">
+                    <div className="DecorativeBubblePurples"></div>
+                    <div className=""></div>
+                </div>
                 <div className="HeadShotContainer">
                     <img src={this.state.headshot} className="HeadShotImage" alt="HeadShotImage"/>
                     <div className="DecorativeBorder"/>
