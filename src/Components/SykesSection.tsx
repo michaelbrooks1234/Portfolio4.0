@@ -15,11 +15,10 @@ class SykesSection extends React.Component {
                 </h1>
                 <div className="JobDescription">
                     <ul>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
+                        <li>Excelled at providing excellent technical support.</li>
+                        <li>Troubleshooted clients issues accurately and efficiently.</li>
+                        <li>Created bug tickets for issues that required changing source code to fix.</li>
+                        <li>Document customer interactions and escalate issues that do not have a known resolution</li>
                     </ul>
                 </div>
             </div>

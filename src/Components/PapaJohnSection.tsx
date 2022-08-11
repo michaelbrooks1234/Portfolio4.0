@@ -15,11 +15,9 @@ class PapaJohnSection extends React.Component {
                 </h1>
                 <div className="JobDescription">
                     <ul>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
+                        <li>Performed assigned workstation duties including making quality products, preparing ingredients, taking orders, providing quality customer service</li>
+                        <li>Worked as part of a team and assisted each other by being on time for my shift, supporting other workstations during their shift and completing all closing duties, including cleaning, at the end of each shift.</li>
+                        <li>Accurately used the FOCUS System, process cash, and/or credit card transactions. Supported sales efforts by suggestively selling to increase the check average when taking an order.</li>
                     </ul>
                 </div>
             </div>

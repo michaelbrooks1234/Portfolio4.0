@@ -260,6 +260,7 @@ body::-webkit-scrollbar {
    border-radius: 50%;
    position: absolute;
    z-index: 4;
+   user-select: none;
 }
 
 .DecorativeBorder {
@@ -352,10 +353,40 @@ body::-webkit-scrollbar {
   animation-iteration-count: infinite;
 }
 
+.ProjectsDesc {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Roboto Slab', serif;
+  user-select: none;
+}
+
+.ProjectArrow {
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  width: 40px;
+  animation-name: ArrowBounce;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.ProjectsArrow {
+  width: 100vh;
+  position: absolute;
+  bottom: 0;
+}
+
 
 @keyframes ArrowBounce {
   from {transform: translateY(0)}
   to {transform: translateY(35%)}
+}
+
+@keyframes ArrowBounceReversed {
+  from {transform: translateY(35%) rotate(180deg)}
+  to {transform: translateY(0) rotate(180deg)}
 }
 
 @media only screen and (max-width: 1700px) {
@@ -449,39 +480,79 @@ body::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   width: 100vw;
+  position: absolute;
+  top: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
+  flex-direction: column;
   }
+
+.ProjectsBobble {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+}
 
 .ArrowReversed {
   margin: 0;
   padding: 0;
   height: 40px;
   width: 40px;
-  transform: rotate(180deg);
+  animation-name: ArrowBounceReversed;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
+.IntroBobble {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  font-family: 'Roboto Slab', serif;
+  user-select: none;
+}
 
+.IntroBobble:hover{
+  cursor: pointer;
+}
 
+.BackToIntro {
+  font-size: 15px;
+  font-family: 'Roboto Slab', serif;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
 
 
 
 
 .ExperienceSectionContainer {
-  height: 100vh;
+  height: 85.5vh;
   width: 100%;
+  position: relative;
   display: flex;
-  flex-direction: column; 
   justify-content: center;
+  margin: 0;
+  padding: 0;
   background-color: #ebfeff;
 }
 
 .ExperienceSubContainer {
-  width: 40%;
+  margin: 0;
+  margin-top: 23vh;
+  padding: 0;
+  height: min-content;
+  min-width: 40%;
+  width: auto;
+  max-width: 80%;
   text-align: left;
-  margin-top: 15vh;
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: center;
 }
 
 .ExperienceSubContainer h1 {
@@ -494,6 +565,7 @@ body::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   margin-left: 15px;
+  width: fit-content;
 }
 
 .JobRoleTitle {
@@ -501,6 +573,7 @@ body::-webkit-scrollbar {
   margin: 0;
   margin-left: 15px;
   padding: 0;
+  width: fit-content;
 }
 
 .ExperienceSubSection {
@@ -508,25 +581,39 @@ body::-webkit-scrollbar {
   border-radius: 3px;
   border: solid 1px #acdcdf;
   padding: 15px;
+  width: auto;
 }
+
 
 .JobTimePeriod {
   font-size: 10px;
   margin-bottom: 20px;
   margin-left: 15px;
+  width: fit-content;
+}
+
+.JobDescription {
+  width: fit-content;
 }
 
 .JobDescription ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  justify-content: center;
+  display: contents;
+  width: auto;
+  min-width: min-content;
+  max-width: max-content;
 }
 
 .JobDescription ul li {
   padding-left: 5px;
   margin: 10px;
-  max-width: 80%;
   font-family: 'Roboto Slab', serif;
-  font-weight: 500;
+  font-weight: 500; 
+  width: fit-content;
+}
+
+.ListThing {
+  width: fit-content;
 }

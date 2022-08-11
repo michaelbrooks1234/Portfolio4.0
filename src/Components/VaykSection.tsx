@@ -15,11 +15,10 @@ class VaykSection extends React.Component {
                 </h1>
                 <div className="JobDescription">
                     <ul>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
-                        <li>Job Description</li>
+                        <li>Provided top tier customer service.</li>
+                        <li>Handled customer issues by taking calls and creating/handling tickets.</li>
+                        <li>Calmed irate customers by being sympathetic and patient.</li>
+                        <li>Improved and reflected feedback given at weekly reviews.</li>
                     </ul>
                 </div>
             </div>
