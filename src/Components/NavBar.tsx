@@ -31,8 +31,8 @@ class NavBar extends React.Component<any, any> {
                     <ul>
                         <li onClick={this.introOnClick}>Intro</li>
                         <li onClick={() => {this.state.scrollToFunction("SecondaryBar")}}>Experience</li>
+                        <li onClick={() => {this.state.scrollToFunction("ThirdBar")}}>Projects</li>
                         <li>Resume</li>
-                        <li>Projects</li>
                     </ul>
                 </div>    
             </div>

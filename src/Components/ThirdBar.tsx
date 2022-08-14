@@ -29,6 +29,10 @@ class ThirdBar extends React.Component<any, any> {
         <div className="ThirdBar" ref={this.state.passRef}>
             <ul>
                 <li onClick={() => this.selectSection('React Portfolio')}>React Portfolio</li>
+                <li onClick={() => this.selectSection('React Portfolio')}>React Portfolio</li>
+                <li onClick={() => this.selectSection('React Portfolio')}>React Portfolio</li>
+                <li onClick={() => this.selectSection('React Portfolio')}>React Portfolio</li>
+                <li onClick={() => this.selectSection('React Portfolio')}>React Portfolio</li>
             </ul>
         </div>
        ) 

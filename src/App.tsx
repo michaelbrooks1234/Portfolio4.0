@@ -27,10 +27,12 @@ class App extends React.Component<any, any>{
   scrollToComp(comp: string){
     if(comp === "SecondaryBar"){
       const ref = this.secondaryBarScroll.current;
-      console.log(ref);
       const y: any = ref.offsetTop - 70;
-      console.log(y);
       window.scrollTo(0, y);
+    }else if(comp === "ThirdBar"){
+      const ref = this.ThirdBarScroll.current;
+      const y: any = ref.offsetTop - 70;
+      window.scrollTo(0,y);
     }
   }
 
@@ -53,7 +55,7 @@ class App extends React.Component<any, any>{
         <NavBar scrollFunction={this.scrollToComp}/>
         <TitleBackground headShot={Headshot} arrow={arrow} scrollFunction={this.scrollToComp}/>
         <SecondaryBar setSection={this.setSelected} passRef={this.secondaryBarScroll}/>
-        <ExperienceSection selected={this.state.selectedSection} arrow={arrow}/>
+        <ExperienceSection selected={this.state.selectedSection} arrow={arrow} scrollFunction={this.scrollToComp}/>
         <ThirdBar setSelection={this.setSelected2} passRef={this.ThirdBarScroll}/>
         <ProjectsSection selected2={this.state.selectedSection2} arrow={arrow} scrollExp={this.scrollToComp}/>
       </div>
