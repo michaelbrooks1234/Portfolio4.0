@@ -629,6 +629,8 @@ body::-webkit-scrollbar {
  padding: 0;
  height: 70px;
  width: 100vw;
+ display: flex;
+ justify-content: space-between;
 }
 
 .ThirdBar ul {
