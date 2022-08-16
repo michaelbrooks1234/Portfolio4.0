@@ -5,7 +5,7 @@ class ReactPortfolio extends React.Component<any, any> {
     render(): React.ReactNode {
        return(
             <div>
-               <h1></h1> 
+               <h1>Hello Squirrel React</h1> 
             </div>
        ) 
     }

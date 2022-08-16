@@ -1,4 +1,7 @@
 import React from 'react'
+import Websites from './Websites'
+import GuiApp from './GuiApp'
+import PythonApi from './PythonApi'
 
 class ThirdBar extends React.Component<any, any> {
 
@@ -10,16 +13,12 @@ class ThirdBar extends React.Component<any, any> {
     }
 
     selectSection(section: string){
-            if(section === "CHILI Publish"){
-                this.state.setSection();
-            }else if (section ==="Sykes"){
-                this.state.setSection();
-            }else if (section === "VayK Gear"){
-                this.state.setSection();
-            }else if(section === "Papa John's"){
-                this.state.setSection();
-            }else {
-                this.state.setSection();
+            if(section === "Websites"){
+                this.state.setSection(<Websites/>);
+            }else if (section === "Calculator"){
+                this.state.setSection(<GuiApp/>);
+            }else if (section === "PythonApi"){
+                this.state.setSection(<PythonApi/>);
             }
         return;
     }
@@ -28,11 +27,9 @@ class ThirdBar extends React.Component<any, any> {
        return(
         <div className="ThirdBar" ref={this.state.passRef}>
             <ul>
-                <li onClick={() => this.selectSection('React Portfolio')}>React Portfolio</li>
-                <li onClick={() => this.selectSection('React Portfolio')}>React Portfolio</li>
-                <li onClick={() => this.selectSection('React Portfolio')}>React Portfolio</li>
-                <li onClick={() => this.selectSection('React Portfolio')}>React Portfolio</li>
-                <li onClick={() => this.selectSection('React Portfolio')}>React Portfolio</li>
+                <li onClick={() => this.selectSection('Websites')}>Websites</li>
+                <li onClick={() => this.selectSection('Calculator')}>C++ GUI calculator APP</li>
+                <li onClick={() => this.selectSection('PythonApi')}>Python API App</li>
             </ul>
         </div>
        ) 
