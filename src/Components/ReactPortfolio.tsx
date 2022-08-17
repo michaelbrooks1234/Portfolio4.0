@@ -10,7 +10,6 @@ class ReactPortfolio extends React.Component<any, any> {
        ) 
     }
 
-
 }
 
 export default ReactPortfolio;

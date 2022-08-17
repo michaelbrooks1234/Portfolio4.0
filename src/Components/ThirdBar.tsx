@@ -7,7 +7,7 @@ class ThirdBar extends React.Component<any, any> {
 
     constructor(props: any) {
     super(props);
-    this.state = {setSection: props.setSection, passRef: props.passRef}
+    this.state = {setSection: props.setSelection, passRef: props.passRef}
     
     this.selectSection = this.selectSection.bind(this);
     }
@@ -27,9 +27,9 @@ class ThirdBar extends React.Component<any, any> {
        return(
         <div className="ThirdBar" ref={this.state.passRef}>
             <ul>
-                <li onClick={() => this.selectSection('Websites')}>Websites</li>
-                <li onClick={() => this.selectSection('Calculator')}>C++ GUI calculator APP</li>
-                <li onClick={() => this.selectSection('PythonApi')}>Python API App</li>
+                <li onClick={() => {this.selectSection('Websites')}}>Portfolios</li>
+                <li onClick={() => {this.selectSection('Calculator')}}>C++ GUI calculator APP</li>
+                <li onClick={() => {this.selectSection('PythonApi')}}>Python API App</li>
             </ul>
         </div>
        ) 

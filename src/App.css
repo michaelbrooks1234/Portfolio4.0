@@ -1,666 +1,623 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
 html {
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll;
+	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+	scrollbar-width: none; /* for Firefox */
+	overflow-y: scroll;
     scroll-behavior: smooth;
+	height: auto;
 }
 
 html::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
+/* some nonsense */
+
 body {
-  margin: 0;
-  padding: 0;
-  --top-margin: 70px;
-  --background-color: #2A0944;
-  --text-color: #3FA796;
-  --gradient-color: ##6f2ea3;
-  --burple: #9C9EFE;
-  --light-burple: #AFB4FF;
-  --content-width: 56%;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll; 
+	margin: 0;
+	padding: 0;
+	--top-margin: 70px;
+	--background-color: #2a0944;
+	--text-color: #3fa796;
+	--gradient-color: ##6f2ea3;
+	--burple: #9c9efe;
+	--light-burple: #afb4ff;
+	--content-width: 56%;
+	height: auto;
+	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+	scrollbar-width: none; /* for Firefox */
+	overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 .Purple {
-  color: #A66CFF;
+	color: #a66cff;
 }
 
 .Blue {
-  color: #9C9EFE;
+	color: #9c9efe;
 }
 
 .LightBlue {
-  color: #AFB4FF;
+	color: #afb4ff;
 }
 
 .DarkBlue {
-  color: #005c61;
+	color: #005c61;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .NavBar {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: var(--top-margin);
-  box-shadow: 0 0px 5px black;
-  z-index: 100;
-  background-color: white;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: var(--top-margin);
+	box-shadow: 0 0px 5px black;
+	z-index: 100;
+	background-color: white;
 }
 
 .NavBarContent {
-  width: var(--content-width);
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	width: var(--content-width);
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .RightNav {
-  height: 100%;
-  width: auto;
-  margin: 0;
-  padding: 0;
+	height: 100%;
+	width: auto;
+	margin: 0;
+	padding: 0;
 }
 
 .RightNav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: auto;
-  overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: auto;
+	overflow: hidden;
 }
 
 .RightNav ul li {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
-  background-size: 100%;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	background-size: 100%;
 }
 
 .RightNav ul li:hover {
-  background-color: #f4f4f4;
-  user-select: none;
-  cursor: pointer;
+	background-color: #f4f4f4;
+	user-select: none;
+	cursor: pointer;
 }
 
 .LeftNav {
-  height: 100%;
-  width: auto;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} 
+	height: 100%;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
 
 .LeftNav h1 {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  user-select: none;
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	user-select: none;
 }
 
 .LeftNav h1:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .App {
-  position:absolute;
-  text-align: center;
-  height: 300vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll; 
+	position: absolute;
+	text-align: center;
+	height: auto;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+	scrollbar-width: none; /* for Firefox */
+	overflow-y: scroll;
 }
-
-
-
-
-
-
-
 
 .App::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .Title {
-  margin: auto;
-  padding: auto;
-  font-family: 'Roboto Slab', serif;
-  font-size: 80px;
-  font-weight: 600;
-  color: black;
-  user-select: none;
+	margin: auto;
+	padding: auto;
+	font-family: "Roboto Slab", serif;
+	font-size: 80px;
+	font-weight: 600;
+	color: black;
+	user-select: none;
 }
 
-.Title0{
-  margin: auto;
-  padding: auto;
-  font-family: 'Roboto Slab', serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: black;
-  user-select: none;
+.Title0 {
+	margin: auto;
+	padding: auto;
+	font-family: "Roboto Slab", serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: black;
+	user-select: none;
 }
 
 .Title2 {
-  margin: 0;
-  padding: 0;
-  margin-top:2vh;
-  font-family: 'Roboto Slab', serif;
-  font-size: 22px;
-  font-weight: 400;
-  color: black;
-  user-select: none;
-  max-width: 620px;
+	margin: 0;
+	padding: 0;
+	margin-top: 2vh;
+	font-family: "Roboto Slab", serif;
+	font-size: 22px;
+	font-weight: 400;
+	color: black;
+	user-select: none;
+	max-width: 620px;
 }
 
 .Michael {
-  color: var(--burple);
+	color: var(--burple);
 }
 
 .TextContainer {
-  height: 60%;
-  width: var(--content-width);
-  margin: auto;
-  padding: auto;
-  margin-top: 100px;
-  text-align: left;
-  z-index: 5;
+	height: 60%;
+	width: var(--content-width);
+	margin: auto;
+	padding: auto;
+	margin-top: 100px;
+	text-align: left;
+	z-index: 5;
 }
 
 .TitleBackground {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-items: center;
-  margin-top: var(--top-margin);
-  width: 100%;
-  height: 100vh;
-  background-color: #f0feff; 
-  position: relative;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-items: center;
+	margin-top: var(--top-margin);
+	width: 100%;
+	height: 100vh;
+	background-color: #f0feff;
+	position: relative;
 }
 
 .HeadShotContainer {
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  bottom: 40%;
-  right: 28%;
-  z-index: 20;
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	bottom: 40%;
+	right: 28%;
+	z-index: 20;
 }
 
 .HeadShotImage {
-   height: 250px;
-   width: 250px;
-   margin: 0;
-   padding: 0;
-   border-radius: 50%;
-   position: absolute;
-   z-index: 4;
-   user-select: none;
+	height: 250px;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 4;
+	user-select: none;
 }
 
 .DecorativeBorder {
-   height: 260px;
-   width: 260px;
-   margin: 0;
-   padding: 0;
-   border-radius: 50%;
-   position: absolute;
-   z-index: 3;
-   background-color: #f2f1ed;
-   left: 145px;
-   top: -5px;
+	height: 260px;
+	width: 260px;
+	margin: 0;
+	padding: 0;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 3;
+	background-color: #f2f1ed;
+	left: 145px;
+	top: -5px;
 }
 
 .DecorativeBubblePurple {
-  height: 260px;
-  width: 260px;
-  border-radius: 50%;
-  background-color: #A66CFF;
-  position: absolute;
-  z-index: -1;
-  top: 30px;
-  left: 200px;
+	height: 260px;
+	width: 260px;
+	border-radius: 50%;
+	background-color: #a66cff;
+	position: absolute;
+	z-index: -1;
+	top: 30px;
+	left: 200px;
 }
 
 .DecorativeBubbleBlue {
-  height: 260px;
-  width: 260px;
-  border-radius: 50%;
-  background-color: var(--light-burple);
-  position: absolute;
-  z-index: -1;
-  top: -30px;
-  left: 80px;
+	height: 260px;
+	width: 260px;
+	border-radius: 50%;
+	background-color: var(--light-burple);
+	position: absolute;
+	z-index: -1;
+	top: -30px;
+	left: 80px;
 }
 
 .DecorativeBubbleLightBlue {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background-color: #B1E1FF;
-  position: absolute;
-  z-index: -2;
-  top: 160px;
-  left: 145px;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background-color: #b1e1ff;
+	position: absolute;
+	z-index: -2;
+	top: 160px;
+	left: 145px;
 }
 
 .DecorativeBubbleMediumPurple {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background-color: #9C9EFE;
-  position: absolute;
-  z-index: -2;
-  top: -50px;
-  left: 250px;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background-color: #9c9efe;
+	position: absolute;
+	z-index: -2;
+	top: -50px;
+	left: 250px;
 }
 
 .ExperienceThingContainer {
-  position: absolute;
-  display:flex;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-  bottom: 14vh;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+	bottom: 14vh;
 }
 
 .ExperienceTitle {
-  margin: 0;
-  padding: 0;
-  width: auto;
-  font-family: 'Roboto Slab', serif;
-  user-select: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	font-family: "Roboto Slab", serif;
+	user-select: none;
 }
 
 .ExperienceTitle:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .Arrow {
-  position: absolute;
-  margin-top: 4vh;
-  padding: 0;
-  height: 40px;
-  width: 40px;
-  animation-name: ArrowBounce;
-  animation-duration: 1.5s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+	position: absolute;
+	margin-top: 4vh;
+	padding: 0;
+	height: 40px;
+	width: 40px;
+	animation-name: ArrowBounce;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
 }
 
 .ProjectsDesc {
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  font-family: 'Roboto Slab', serif;
-  user-select: none;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font-family: "Roboto Slab", serif;
+	user-select: none;
 }
 
 .ProjectArrow {
-  padding: 0;
-  margin: 0;
-  height: 40px;
-  width: 40px;
-  animation-name: ArrowBounce;
-  animation-duration: 1.5s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	width: 40px;
+	animation-name: ArrowBounce;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
 }
 
 .ProjectsArrow {
-  width: 100vh;
-  position: absolute;
-  bottom: 0;
+	width: 100vh;
+	position: absolute;
+	bottom: 0;
 }
 
-
 @keyframes ArrowBounce {
-  from {transform: translateY(0)}
-  to {transform: translateY(35%)}
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(35%);
+	}
 }
 
 @keyframes ArrowBounceReversed {
-  from {transform: translateY(35%) rotate(180deg)}
-  to {transform: translateY(0) rotate(180deg)}
+	from {
+		transform: translateY(35%) rotate(180deg);
+	}
+	to {
+		transform: translateY(0) rotate(180deg);
+	}
 }
 
 @media only screen and (max-width: 1700px) {
-  .HeadShotContainer {
-    display: none;
-  }
+	.HeadShotContainer {
+		display: none;
+	}
 }
 
-
-
-
-
-
-
-
-
-
-
 .SecondaryBar {
-  height: 65px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #005c61;
-  display: flex;
-  justify-content: center;
+	height: 65px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #005c61;
+	display: flex;
+	justify-content: center;
 }
 
 .SecondaryBar h1 {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .SecondBarContent {
-  width: var(--content-width);
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  display: flex;
+	width: var(--content-width);
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
 }
 
 .SecondBarContent ul {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items:center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .SecondBarContent ul li {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  padding: auto;
-  color: white;
-  user-select: none;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	padding: auto;
+	color: white;
+	user-select: none;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
 }
 
 .SecondBarContent ul li:hover {
-  background-color: #00767c;
-  cursor: pointer;
+	background-color: #00767c;
+	cursor: pointer;
 }
-
 
 .ExperienceSectionIntroContainer {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  bottom: 0;
-  position: absolute;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	position: absolute;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
 
-.ExperienceSectionIntroContainer h1{
-  font-family: 'Roboto Slab', serif;
-  font-size: 15px;
+.ExperienceSectionIntroContainer h1 {
+	font-family: "Roboto Slab", serif;
+	font-size: 15px;
 }
 
 .ExperienceBobble {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  position: absolute;
-  top: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  flex-direction: column;
-  }
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	position: absolute;
+	top: 1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	flex-direction: column;
+}
 
 .ProjectsBobble {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto Slab', serif;
-  font-size: 30px;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto Slab", serif;
+	font-size: 30px;
 }
 
 .ProjectsBobble:hover {
-  cursor: pointer;
-  user-select: none;
+	cursor: pointer;
+	user-select: none;
 }
 
 .ArrowReversed {
-  margin: 0;
-  padding: 0;
-  height: 40px;
-  width: 40px;
-  animation-name: ArrowBounceReversed;
-  animation-duration: 1.5s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	width: 40px;
+	animation-name: ArrowBounceReversed;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
 }
 
 .IntroBobble {
-  margin: 0;
-  padding: 0;
-  width: auto;
-  font-family: 'Roboto Slab', serif;
-  user-select: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	font-family: "Roboto Slab", serif;
+	user-select: none;
 }
 
-.IntroBobble:hover{
-  cursor: pointer;
+.IntroBobble:hover {
+	cursor: pointer;
 }
 
 .BackToIntro {
-  font-size: 15px;
-  font-family: 'Roboto Slab', serif;
-  user-select: none;
-  margin: 0;
-  padding: 0;
+	font-size: 15px;
+	font-family: "Roboto Slab", serif;
+	user-select: none;
+	margin: 0;
+	padding: 0;
 }
 
-
-
-
 .ExperienceSectionContainer {
-  height: calc(100vh - 135px);
-  min-height: max-content;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  background-color: #ebfeff;
+	max-height: max-content;
+	min-height: calc(100vh - 135px);
+	height: auto;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	background-color: #ebfeff;
 }
 
 .ExperienceSubContainer {
-  margin: 0;
-  margin-top: 23vh;
-  padding: 0;
-  height: min-content;
-  min-width: 40%;
-  width: auto;
-  max-width: 80%;
-  text-align: left;
-  margin-bottom: 2vh;
-  display: flex;
-  justify-content: center;
+	margin: 0;
+	margin-top: 23vh;
+	padding: 0;
+	height: min-content;
+	min-width: 40%;
+	max-width: 95%;
+	width: auto;
+	text-align: left;
+	margin-bottom: 2vh;
+	display: flex;
+	justify-content: center;
 }
 
 .ExperienceSubContainer h1 {
-  font-family: 'Roboto Slab', serif;
+	font-family: "Roboto Slab", serif;
 }
 
 .JobTitle {
-  font-size: 45px;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  margin-left: 15px;
-  width: fit-content;
+	font-size: 45px;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	margin-left: 15px;
+	width: fit-content;
 }
 
 .JobRoleTitle {
-  font-size: 20px;
-  margin: 0;
-  margin-left: 15px;
-  padding: 0;
-  width: fit-content;
+	font-size: 20px;
+	margin: 0;
+	margin-left: 15px;
+	padding: 0;
+	width: fit-content;
 }
 
 .ExperienceSubSection {
-  background-color: white;
-  border-radius: 3px;
-  border: solid 1px #acdcdf;
-  padding: 15px;
-  width: auto;
+	background-color: white;
+	border-radius: 3px;
+	border: solid 1px #acdcdf;
+	padding: 15px;
+	width: auto;
+	margin-bottom: 10vh;
 }
 
-
 .JobTimePeriod {
-  font-size: 10px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-  width: fit-content;
+	font-size: 10px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	width: fit-content;
 }
 
 .JobDescription {
-  width: fit-content;
+	width: fit-content;
 }
 
 .JobDescription ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: contents;
-  width: auto;
-  min-width: min-content;
-  max-width: max-content;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: contents;
+	width: auto;
+	min-width: min-content;
+	max-width: max-content;
 }
 
 .JobDescription ul li {
-  padding-left: 5px;
-  margin: 10px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 500; 
-  width: fit-content;
+	padding-left: 5px;
+	margin: 10px;
+	font-family: "Roboto Slab", serif;
+	font-weight: 500;
+	width: fit-content;
 }
 
 .ListThing {
-  width: fit-content;
+	width: fit-content;
 }
 
 .ThirdBar {
- margin: 0;
- padding: 0;
- height: 70px;
- width: 100vw;
- display: flex;
- justify-content: center;
- background-color: #005c61;
+	margin: 0;
+	padding: 0;
+	height: 65px;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	background-color: #005c61;
 }
 
 .ThirdBar ul {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: var(--content-width);
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  align-items: center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: var(--content-width);
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	align-items: center;
 }
 
 .ThirdBar ul li {
-  margin: 0;
-  padding: 0;
-  display: inline;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  color: white;
-  user-select: none;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+	user-select: none;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
 }
 
 .ThirdBar ul li:hover {
-  background-color: #00767c;
-  cursor: pointer;
+	background-color: #00767c;
+	cursor: pointer;
+
 }
