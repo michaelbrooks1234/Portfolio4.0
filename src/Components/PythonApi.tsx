@@ -20,6 +20,7 @@ class PythonApi extends React.Component<any, any> {
                         <li>The app was made simply with Python and tkinter. Tkinter for the GUI side of things and Python for both tkinter and to handle the requests.</li>
                         <li>This Project was able to really get me started into programming and would get me used to reading documentation and working with APIs.</li>
                         <li>Eventually I will do a similar project with node.js and TypeScript with an updated appearance and a more in depth API that can provide more interaction for the user.</li>
+                        <li>Link to project on github: <a href='https://github.com/michaelbrooks1234/TkinterAPOD_App' target={"_blank"} rel="noreferrer">Python app</a></li>
                     </ul>
                 </div>
             </div>

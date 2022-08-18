@@ -15,9 +15,9 @@ class ProjectsSection extends React.Component<any, any> {
                     {this.props.selected}
                 </div>
                 <div className="ProjectsArrow">
-                   <h1 className="ProjectsBobble">Resume</h1>
+                   <h1 className="ProjectsBobble" onClick={() => {this.props.scrollExp("Resume")}}>Resume</h1>
                    <img src={this.props.arrow} alt="arrow" className="ProjectArrow"/> 
-                   <h1 className="ProjectsDesc">Down here are my projects.</h1>
+                   <h1 className="ProjectsDesc">Down here is my Resume.</h1>
                 </div>
             </div>
         )

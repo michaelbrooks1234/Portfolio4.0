@@ -621,3 +621,20 @@ body::-webkit-scrollbar {
 	cursor: pointer;
 
 }
+
+.ResumeSection {
+	margin: 0;
+	padding: 0;
+	border-top: solid 1px black;
+	min-height: calc(100vh - 70px);
+	max-height: max-content;
+	width: 100%;
+}
+
+.ResumePDF {
+	margin: 0;
+	padding: 0;
+	margin-top: calc(5vh - 35px);
+	height: 90vh;
+	width: 56vw;
+}

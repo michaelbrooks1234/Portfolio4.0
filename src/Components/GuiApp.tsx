@@ -16,7 +16,9 @@ class GuiApp extends React.Component<any, any> {
                 </h1>
                 <div className="JobDescription">
                     <ul>
-                        <li>Gui</li>
+                        <li>This is a small GUI app made with C++ and QT. It functions as a simple calculator that can do what you expect a calculator to do.</li>
+                        <li>This app gave me some useful experience in making GUI applications using a sophisticated framework like QT that is more in depth than something like tkinter for Python.</li>
+                        <li>Here is a link to the project: <a href='https://github.com/michaelbrooks1234/Calculator_app' target={"_blank"} rel="noreferrer">C++ app</a></li>
                     </ul>
                 </div>
             </div>

@@ -10,16 +10,20 @@ import arrow from './arrow.png'
 import ThirdBar from './Components/ThirdBar'
 import ProjectsSection from './Components/ProjectsSection';
 import Websites from './Components/Websites';
+import ResumeSection from './Components/ResumeSection';
 
 class App extends React.Component<any, any>{
   private secondaryBarScroll: any;
-  private ThirdBarScroll: any;
+  private thirdBarScroll: any;
+  private resumeSection: any;
+
   constructor(props: any) {
     super(props);
     this.state = {selectedSection: <ChiliSection/>, selectedSection2: <Websites/>}
 
-    this.ThirdBarScroll = React.createRef();
+    this.thirdBarScroll = React.createRef();
     this.secondaryBarScroll = React.createRef();
+    this.resumeSection = React.createRef();
     this.scrollToComp = this.scrollToComp.bind(this);
     this.setSelected = this.setSelected.bind(this);
     this.setSelected2 = this.setSelected2.bind(this); 
@@ -31,7 +35,11 @@ class App extends React.Component<any, any>{
       const y: any = ref.offsetTop - 70;
       window.scrollTo(0, y);
     }else if(comp === "ThirdBar"){
-      const ref = this.ThirdBarScroll.current;
+      const ref = this.thirdBarScroll.current;
+      const y: any = ref.offsetTop - 70;
+      window.scrollTo(0,y);
+    }else if(comp === "Resume"){
+      const ref = this.resumeSection.current;
       const y: any = ref.offsetTop - 70;
       window.scrollTo(0,y);
     }
@@ -57,8 +65,9 @@ class App extends React.Component<any, any>{
         <TitleBackground headShot={Headshot} arrow={arrow} scrollFunction={this.scrollToComp}/>
         <SecondaryBar setSection={this.setSelected} passRef={this.secondaryBarScroll}/>
         <ExperienceSection selected={this.state.selectedSection} arrow={arrow} scrollFunction={this.scrollToComp}/>
-        <ThirdBar setSelection={this.setSelected2} passRef={this.ThirdBarScroll}/>
+        <ThirdBar setSelection={this.setSelected2} passRef={this.thirdBarScroll}/>
         <ProjectsSection selected={this.state.selectedSection2} arrow={arrow} scrollExp={this.scrollToComp}/>
+        <ResumeSection passRef={this.resumeSection}/>
       </div>
     )
   }
