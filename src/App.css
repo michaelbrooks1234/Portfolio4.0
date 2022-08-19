@@ -629,6 +629,7 @@ body::-webkit-scrollbar {
 	min-height: calc(100vh - 70px);
 	max-height: max-content;
 	width: 100%;
+	background-color: #acdcdf;
 }
 
 .ResumePDF {
