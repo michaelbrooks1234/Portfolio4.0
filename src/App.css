@@ -372,12 +372,6 @@ body::-webkit-scrollbar {
 	}
 }
 
-@media only screen and (max-width: 1000px) {
-	.ResumePDF {
-		width: 95vw;
-	}
-}
-
 .SecondaryBar {
 	height: 65px;
 	width: 100%;
@@ -656,4 +650,10 @@ body::-webkit-scrollbar {
 	margin-top: calc(5vh - 35px);
 	height: 90vh;
 	width: 56vw;
+}
+
+@media only screen and (max-width: 1000px) {
+	.ResumePDF {
+		width: 95vw;
+	}
 }
