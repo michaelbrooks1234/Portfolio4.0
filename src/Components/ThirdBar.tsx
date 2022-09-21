@@ -2,6 +2,7 @@ import React from 'react'
 import Websites from './Websites'
 import GuiApp from './GuiApp'
 import PythonApi from './PythonApi'
+import Sql from './Sql'
 
 class ThirdBar extends React.Component<any, any> {
 
@@ -19,6 +20,8 @@ class ThirdBar extends React.Component<any, any> {
                 this.state.setSection(<GuiApp/>);
             }else if (section === "PythonApi"){
                 this.state.setSection(<PythonApi/>);
+            }else if(section === "SQL"){
+                this.state.setSection(<Sql/>)
             }
         return;
     }
@@ -27,6 +30,7 @@ class ThirdBar extends React.Component<any, any> {
        return(
         <div className="ThirdBar" ref={this.state.passRef}>
             <ul>
+                <li onClick={() => {this.selectSection('SQL')}}>SQL Editor</li>
                 <li onClick={() => {this.selectSection('Websites')}}>Portfolios</li>
                 <li onClick={() => {this.selectSection('Calculator')}}>C++ GUI calculator APP</li>
                 <li onClick={() => {this.selectSection('PythonApi')}}>Python API App</li>
